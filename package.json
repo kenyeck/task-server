@@ -6,8 +6,7 @@
   "scripts": {
     "start": "node ./src/index.js",
     "dev": "cross-env NODE_ENV=development node --watch --env-file=.env.development ./src/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "echo \"No build step required\""
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
