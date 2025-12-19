@@ -16,8 +16,6 @@ import { seedTasks } from './db/seed.js';
 seedTasks();
 
 const domain = process.env.SERVER_DOMAIN || 'localhost';
-console.log(`Vercel domain: ${process.env.VERCEL_URL}, ${process.env.SERVER_DOMAIN}`);
-
 const port = process.env.SERVER_PORT || 3001;
 export const app = express();
 const apiLimiter = rateLimit({
