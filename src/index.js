@@ -17,7 +17,7 @@ seedTasks();
 
 const domain = process.env.SERVER_DOMAIN || 'localhost';
 const port = process.env.SERVER_PORT || 3001;
-export const app = express();
+const app = express();
 const apiLimiter = rateLimit({
    windowMs: 5 * 60 * 1000,
    max: 50
@@ -49,3 +49,5 @@ await connectDb();
 app.listen(port, () => {
    console.log(`Server is running on http://${domain}:${port}`);
 });
+
+export default app;
